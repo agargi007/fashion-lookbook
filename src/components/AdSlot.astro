@@ -1,0 +1,33 @@
+---
+interface Props {
+  quote?: string;
+  author?: string;
+  ctaText?: string;
+}
+
+const { 
+  quote = "Simplicity is the keynote of all true elegance.", 
+  author = "Coco Chanel",
+  ctaText = "Curated Partner Curation" 
+} = Astro.props;
+---
+
+<div 
+  class="col-span-1 md:col-span-2 lg:col-span-3 my-8 mx-auto w-full text-center min-h-[270px] bg-card-bg/50 border border-text/10 flex flex-col items-center justify-center text-[10px] tracking-[0.25em] uppercase text-text/50 px-8 py-12 transition-all duration-500 hover:border-terracotta/30 lookbook-ad-slot reveal"
+>
+  <span class="text-[8px] text-terracotta opacity-85 tracking-[0.35em] mb-6">Advertisement</span>
+  
+  <div class="max-w-md space-y-3 mb-6">
+    <p class="font-serif text-lg md:text-xl tracking-normal normal-case text-text italic leading-relaxed">
+      "{quote}"
+    </p>
+    <p class="text-[9px] text-text/60 tracking-widest">— {author}</p>
+  </div>
+  
+  <a 
+    href="#" 
+    class="border-b border-terracotta/40 pb-0.5 text-[9px] font-sans font-semibold text-terracotta hover:text-text hover:border-text transition-all duration-300"
+  >
+    {ctaText} ↗
+  </a>
+</div>

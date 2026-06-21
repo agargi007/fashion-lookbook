@@ -1,0 +1,160 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Shop the Aesthetic — L'Estetica Italiana", 
+  description = "A highly-curated luxury fashion lookbook inspired by Italian beauty brand aesthetics, featuring minimalist lines and warm nude tones." 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Google Fonts: Playfair Display (Serif) & DM Sans (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="relative bg-bg text-text selection:bg-text selection:text-bg overflow-x-hidden">
+    
+    <!-- Dynamic 3D Parallax Grid Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0 bg-bg">
+      
+      <!-- 3D Perspective Grid -->
+      <div class="absolute inset-0 opacity-[0.09] flex items-center justify-center" style="perspective: 800px;">
+        <div 
+          id="parallax-grid" 
+          class="w-[220%] h-[220%] bg-[linear-gradient(to_right,var(--color-text)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-text)_1px,transparent_1px)] bg-[size:80px_80px] origin-center animate-scroll-grid" 
+          style="transform: rotateX(65deg) translate3d(0px, 0px, 0px);"
+        ></div>
+      </div>
+      
+      <!-- Floating 3D Wireframe Gallery Frames (Vortex feel) -->
+      <div class="absolute inset-0 flex items-center justify-center opacity-[0.04]" style="perspective: 1200px; transform-style: preserve-3d;">
+        <!-- Box 1 -->
+        <div 
+          class="absolute w-[400px] h-[600px] border border-text origin-center animate-rotate-3d-slow -translate-x-[20%] -translate-y-[10%]"
+          style="transform-style: preserve-3d;"
+        ></div>
+        <!-- Box 2 -->
+        <div 
+          class="absolute w-[500px] h-[350px] border border-text origin-center animate-rotate-3d-medium translate-x-[25%] translate-y-[20%]"
+          style="transform-style: preserve-3d;"
+        ></div>
+      </div>
+      
+      <!-- Radial gradient mask to fade the grid at edges (Printed vignette style) -->
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,var(--color-bg)_90%)] z-10"></div>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+      <!-- Header -->
+      <header class="w-full border-b border-text/5 py-6 px-6 md:px-16 flex justify-between items-center bg-bg/85 backdrop-blur-md sticky top-0 z-50">
+        <a href="/" class="font-serif text-xl md:text-2xl tracking-tight uppercase hover:opacity-75 transition-opacity">
+          Élévation
+        </a>
+        <nav class="hidden md:flex space-x-8 text-[10px] tracking-[0.2em] uppercase text-text/60">
+          <a href="#" class="hover:text-text transition-colors">Collection</a>
+          <a href="#" class="hover:text-text transition-colors">The Selection</a>
+          <a href="#" class="hover:text-text transition-colors">Journal</a>
+          <a href="#" class="hover:text-text transition-colors">About</a>
+        </nav>
+        <div class="text-[10px] tracking-[0.2em] uppercase">
+          <a href="#" class="border-b border-text pb-0.5 hover:opacity-70 transition-opacity">Bag (0)</a>
+        </div>
+      </header>
+
+      <!-- Slot for main content -->
+      <main class="flex-grow">
+        <slot />
+      </main>
+
+      <!-- Footer -->
+      <footer class="w-full border-t border-text/5 py-16 px-6 md:px-16 bg-card-bg/40 mt-32">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="md:col-span-2 space-y-4">
+            <h3 class="font-serif text-2xl tracking-tight">Élévation</h3>
+            <p class="text-xs text-text/60 max-w-sm leading-relaxed">
+              A highly-curated luxury lookbook grid inspired by Italian architectural beauty. Re-imagining modern tailoring, clean lines, and warm nude aesthetics.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <h4 class="text-[10px] tracking-[0.2em] uppercase text-text/40">Collection</h4>
+            <ul class="space-y-1.5 text-[11px] tracking-wider text-text/75">
+              <li><a href="#" class="hover:text-text transition-colors">Lookbook Grid</a></li>
+              <li><a href="#" class="hover:text-text transition-colors">Affiliate Disclosures</a></li>
+              <li><a href="#" class="hover:text-text transition-colors">Contact</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <h4 class="text-[10px] tracking-[0.2em] uppercase text-text/40">Legal</h4>
+            <ul class="space-y-1.5 text-[11px] tracking-wider text-text/75">
+              <li><a href="#" class="hover:text-text transition-colors">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-text transition-colors">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 pt-6 border-t border-text/5 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-widest uppercase text-text/40 gap-4">
+          <p>© {new Date().getFullYear()} Élévation. All rights reserved.</p>
+          <p>Italian Aesthetics</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Mouse Tracking Parallax Script -->
+    <script>
+      const initParallax = () => {
+        const grid = document.getElementById('parallax-grid');
+        if (!grid) return;
+
+        let targetX = 0;
+        let targetY = 0;
+        let currentX = 0;
+        let currentY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+          // Compute mouse offset from screen center (-0.5 to 0.5)
+          const xOffset = (e.clientX / window.innerWidth) - 0.5;
+          const yOffset = (e.clientY / window.innerHeight) - 0.5;
+
+          // Parallax boundary (up to 40px grid translation)
+          targetX = xOffset * 40;
+          targetY = yOffset * 40;
+        });
+
+        // Buttery-smooth interpolation loop (lerp)
+        const updateParallax = () => {
+          currentX += (targetX - currentX) * 0.08;
+          currentY += (targetY - currentY) * 0.08;
+
+          grid.style.transform = `rotateX(65deg) translate3d(${currentX}px, ${currentY}px, 0)`;
+          requestAnimationFrame(updateParallax);
+        };
+
+        updateParallax();
+      };
+
+      // Run on page load
+      initParallax();
+
+      // Run on swapper for Astro SPA navigation
+      document.addEventListener('astro:after-swap', initParallax);
+    </script>
+  </body>
+</html>

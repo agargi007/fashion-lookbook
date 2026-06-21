@@ -1,0 +1,58 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  category: string;
+  price: string;
+  imageUrl: string;
+  rawUrl: string;
+}
+
+const { id, title, category, price, imageUrl, rawUrl } = Astro.props;
+---
+
+<a 
+  href={rawUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="group cursor-pointer flex flex-col lookbook-card reveal"
+  data-lookbook-id={id}
+  data-category={category}
+>
+  <!-- Image Container with a subtle lift effect on hover -->
+  <div class="relative overflow-hidden aspect-[3/4] bg-card-bg z-10 transition-transform duration-500 ease-out group-hover:-translate-y-2">
+    <!-- Lifestyle Image -->
+    <img 
+      src={imageUrl} 
+      alt={title} 
+      loading="lazy"
+      class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+    />
+    
+    <!-- Thin 1px elegant border around the image on hover (Printed look) -->
+    <div class="absolute inset-0 border border-text/0 group-hover:border-text/10 transition-colors duration-500 pointer-events-none z-20"></div>
+
+    <!-- Sliding CTA Overlay in high-contrast color inversion -->
+    <div 
+      class="absolute inset-x-0 bottom-0 bg-text text-bg py-4 px-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex justify-between items-center z-20"
+    >
+      <span class="text-[10px] tracking-[0.25em] uppercase font-sans font-semibold">Shop the Look</span>
+      <span class="text-sm font-light">↗</span>
+    </div>
+  </div>
+
+  <!-- Product Metadata -->
+  <div class="mt-4 flex justify-between items-start px-1 z-20">
+    <div>
+      <span class="text-[9px] tracking-[0.2em] uppercase text-terracotta font-sans font-semibold">
+        {category}
+      </span>
+      <h3 class="font-serif text-base text-text mt-0.5 transition-colors duration-300 group-hover:text-terracotta">
+        {title}
+      </h3>
+    </div>
+    <span class="font-sans text-xs text-text/60 font-medium pt-3.5">
+      {price}
+    </span>
+  </div>
+</a>
