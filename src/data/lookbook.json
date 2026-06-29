@@ -1,65 +1,82 @@
 [
   {
     "id": "look-01",
-    "title": "Jacquemus Beige Le Bambola Medium Tote",
+    "title": "Minimalist Beige Fashion Accessory",
     "brand": "Jacquemus",
     "category": "Bags",
-    "imageUrl": "/images/carolina-herrera-dress.png",
+    "imageUrl": "/images/beige-tote-accessory.png",
     "price": "See Site",
-    "rawUrl": "https://amzn.to/3SO6qX1"
+    "rawUrl": "https://amzn.to/3SO6qX1",
+    "alt": "Minimalist Beige Fashion Accessory"
   },
   {
     "id": "look-02",
-    "title": "Black Two-Piece Co-Ord Set",
+    "title": "Black Two-Piece Crop Top and High Slit Maxi Skirt Co-Ord Set",
     "brand": "GRECIILOOKS",
     "category": "Dresses",
-    "imageUrl": "/images/sportmax-dress.png",
+    "imageUrl": "/images/black-two-piece-coord.png",
     "price": "See Site",
-    "rawUrl": "https://amzn.to/441IORe"
+    "rawUrl": "https://amzn.to/441IORe",
+    "alt": "Black Two-Piece Crop Top and High Slit Maxi Skirt Co-Ord Set"
   },
   {
     "id": "look-03",
-    "title": "Green Floral V-Neck Ruffle Mini Dress",
+    "title": "Green Floral V-Neck Ruffle Long Sleeve A-Line Mini Dress",
     "brand": "Leriya Fashion",
     "category": "Dresses",
-    "imageUrl": "/images/blue-floral-slip-dress.png",
+    "imageUrl": "/images/green-floral-mini-dress.png",
     "price": "See Site",
-    "rawUrl": "https://amzn.to/4xWxumW"
+    "rawUrl": "https://amzn.to/4xWxumW",
+    "alt": "Green Floral V-Neck Ruffle Long Sleeve A-Line Mini Dress"
   },
   {
     "id": "look-04",
-    "title": "Paisley Printed Summer Travel Co-Ord Set",
+    "title": "Paisley Printed Short Sleeve Shirt and Wide-Leg Pant Summer Co-Ord Set",
     "brand": "Leriya Fashion",
     "category": "Dresses",
-    "imageUrl": "/images/alberta-ferretti-pink-dress.png",
+    "imageUrl": "/images/paisley-printed-summer-coord.png",
     "price": "See Site",
-    "rawUrl": "https://amzn.to/4eKc2sF"
+    "rawUrl": "https://amzn.to/4eKc2sF",
+    "alt": "Paisley Printed Short Sleeve Shirt and Wide-Leg Pant Summer Co-Ord Set"
   },
   {
     "id": "look-05",
-    "title": "Turquoise Abstract Print Co-Ord Set",
+    "title": "Turquoise Abstract Print Stylish Summer Jumpsuit Co-Ord Set",
     "brand": "Leriya Fashion",
     "category": "Dresses",
-    "imageUrl": "/images/everlane-cotton-poplin-dress.png",
+    "imageUrl": "/images/turquoise-abstract-print-coord.png",
     "price": "See Site",
-    "rawUrl": "https://amzn.to/4bgGYQh"
+    "rawUrl": "https://amzn.to/4bgGYQh",
+    "alt": "Turquoise Abstract Print Stylish Summer Jumpsuit Co-Ord Set"
   },
   {
     "id": "look-06",
-    "title": "Aahwan Halter Neck Bodycon Midi Dress",
+    "title": "Black Solid Halter Neck Bodycon Midi Dress",
     "brand": "Aahwan",
     "category": "Dresses",
-    "imageUrl": "/images/everlane-knit-dress.png",
+    "imageUrl": "/images/aahwan-halter-neck-bodycon.png",
     "price": "See Site",
-    "rawUrl": "https://amzn.to/4vEr4aT"
+    "rawUrl": "https://amzn.to/4vEr4aT",
+    "alt": "Black Solid Halter Neck Bodycon Midi Dress"
   },
   {
     "id": "look-07",
-    "title": "Tokyo Talkies Women Navy Co-Ord Set",
+    "title": "Navy Blue Vest and Trousers Formal Co-Ord Set",
     "brand": "Tokyo Talkies",
     "category": "Dresses",
-    "imageUrl": "/images/annabelle-brown-dress.png",
+    "imageUrl": "/images/tokyo-talkies-navy-coord.png",
     "price": "See Site",
-    "rawUrl": "https://amzn.to/4faZsnC"
+    "rawUrl": "https://amzn.to/4faZsnC",
+    "alt": "Navy Blue Vest and Trousers Formal Co-Ord Set"
+  },
+  {
+    "id": "look-08",
+    "title": "Black Sweetheart Neck Short Sleeves Ribbed Mini Bodycon Dress",
+    "brand": "GLARE & BLAIR",
+    "category": "Dresses",
+    "imageUrl": "/images/glare-blair-sweetheart-mini.png",
+    "price": "See Site",
+    "rawUrl": "https://amzn.to/4vGaCXA",
+    "alt": "Black Sweetheart Neck Short Sleeves Ribbed Mini Bodycon Dress"
   }
 ]

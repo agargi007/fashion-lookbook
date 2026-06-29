@@ -6,9 +6,10 @@ interface Props {
   price: string;
   imageUrl: string;
   rawUrl: string;
+  alt?: string;
 }
 
-const { id, title, category, price, imageUrl, rawUrl } = Astro.props;
+const { id, title, category, price, imageUrl, rawUrl, alt } = Astro.props;
 ---
 
 <a 
@@ -24,7 +25,7 @@ const { id, title, category, price, imageUrl, rawUrl } = Astro.props;
     <!-- Lifestyle Image -->
     <img 
       src={imageUrl} 
-      alt={title} 
+      alt={alt || title} 
       loading="lazy"
       class="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
     />
