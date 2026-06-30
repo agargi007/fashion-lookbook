@@ -38,5 +38,35 @@
     "price": "See Site",
     "rawUrl": "https://amzn.to/3SyUFDT",
     "alt": "Aahwan Maroon Square Neck Bodycon Mermaid Hem Maxi Dress"
+  },
+  {
+    "id": "look-05",
+    "title": "Aahwan Polka Dots Halter Backless A-Line Flared Vintage Dress",
+    "brand": "Aahwan",
+    "category": "Dresses",
+    "imageUrl": "/images/item5-polka-dot.jpg",
+    "price": "See Site",
+    "rawUrl": "https://amzn.to/4eLD3Ml",
+    "alt": "Aahwan Polka Dots Halter Backless A-Line Flared Vintage Dress"
+  },
+  {
+    "id": "look-06",
+    "title": "Leriya Fashion Paisley Printed Summer Travel Co-Ord Set",
+    "brand": "Leriya Fashion",
+    "category": "Dresses",
+    "imageUrl": "/images/item6-paisley-coord.jpg",
+    "price": "See Site",
+    "rawUrl": "https://amzn.to/3SwtbPj",
+    "alt": "Leriya Fashion Paisley Printed Summer Travel Co-Ord Set"
+  },
+  {
+    "id": "look-07",
+    "title": "Leriya Fashion One Shoulder Bodycon Knee Length Party Dress",
+    "brand": "Leriya Fashion",
+    "category": "Dresses",
+    "imageUrl": "/images/item7-one-shoulder.jpg",
+    "price": "See Site",
+    "rawUrl": "https://amzn.to/4eEax0y",
+    "alt": "Leriya Fashion One Shoulder Bodycon Knee Length Party Dress"
   }
 ]
